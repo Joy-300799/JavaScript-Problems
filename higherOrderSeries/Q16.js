@@ -26,8 +26,16 @@ var list = [
 ]
 
 function askForMissingDetails(list) {
-    let findNull = list.map(x => Object.values(x).filter(s => s === null))
-    return findNull;
+    let arr = [];
+    list.map(list=>{
+    for (let i in list){
+      if (list[i]===null){
+        list={...list,question:`Hi, could you please provide your ${i}.`}
+        arr.push(list)
+      }
+    }})
+    return arr 
 }
 
 console.log(askForMissingDetails(list))
+
