@@ -15,6 +15,6 @@ function anagram() {
     }
 }
 
-let fWord = "armys"
-let sWord = "mary"
+let fWord = "civic"
+let sWord = "vicci"
 console.log(anagram(fWord, sWord))
