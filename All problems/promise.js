@@ -6,7 +6,7 @@
 //    data="new State"
 //    },2000)
 //    console.log(data)                  //initial state
-   
+
 //    //!---------normal-------
 //    let data= "initial state"
 //    setTimeout(function(){
@@ -14,7 +14,7 @@
 //        console.log("inside timer")
 //    },2000)
 //    console.log(data)    //initial state   (after 2 sec)insider timer
-   
+
 //    //!-------------promise------------
 //    let data=new Promise(function(resolve,reject){
 //         setTimeout(function(){
@@ -37,3 +37,21 @@
 //   });
 //   }
 //   sum(1,5)
+
+const promise = new Promise((resolve, reject) => {
+  const a = "abc";
+  const b = "abc";
+
+  if (a === b) {
+    resolve();
+  }
+  reject();
+});
+
+promise
+  .then(() => {
+    console.log("Success") ;
+  })
+  .catch(() => {
+   console.log("Error");
+  });
