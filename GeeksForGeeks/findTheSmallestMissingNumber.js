@@ -6,8 +6,8 @@ Given a sorted array of n distinct integers where each integer
  that is missing from the array.
  */
 
-let arr = [4, 5, 10, 11];
-let m = 12;
+let arr = [0, 1, 2, 6, 9];
+let m = 10;
 
 function findSmallest(arr, m) {
   for (let i = 0; i < arr.length; i++) {
