@@ -17,4 +17,3 @@
 15. reverse digits of a numbers
 16. reverse sequence
 17. sort without inbuilt functions
-18. 
