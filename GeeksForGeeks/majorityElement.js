@@ -13,16 +13,29 @@ function findMajority(arr) {
       obj[arr[i]] = 1;
     }
   }
+  console.log(obj)
 
+  //1st approach
   let max = -Infinity;
   let key = -Infinity;
 
-  for (i in obj) {
-    if (obj[i] > max) {
-      max = obj[i];
-      key = i;
-    }
-  }
-  return key;
+  // for (i in obj) {
+  //   if (obj[i] > max) {
+  //     max = obj[i];
+  //     key = i;
+  //   }
+  // }
+  // return key;
+
+
+  //2nd approach
+  const keys = Object.keys(obj)
+  const val = Object.values(obj)
+
+  // const maxRep = val.indexOf(Math.max(...val))
+  return keys[val.indexOf(Math.max(...val))]
+
+  // console.log(maxRep)
+  // return keys[maxRep]
 }
 console.log(findMajority(arr));
