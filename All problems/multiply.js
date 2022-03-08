@@ -12,3 +12,5 @@ function Multiply(num1, num2) {
   }
 }
 console.log(Multiply(num1,num2))
+
+
